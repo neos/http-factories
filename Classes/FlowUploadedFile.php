@@ -41,8 +41,9 @@ class FlowUploadedFile extends UploadedFile
      * or an array with the "__identity" key set to the persistent identifier.
      *
      * @param array{__identity: string}|string $originallySubmittedResource
+     * @return void
      */
-    public function setOriginallySubmittedResource($originallySubmittedResource): void
+    public function setOriginallySubmittedResource($originallySubmittedResource)
     {
         $this->originallySubmittedResource = $originallySubmittedResource;
     }
@@ -57,8 +58,9 @@ class FlowUploadedFile extends UploadedFile
 
     /**
      * @param string $collectionName
+     * @return void
      */
-    public function setCollectionName($collectionName): void
+    public function setCollectionName($collectionName)
     {
         $this->collectionName = $collectionName;
     }
