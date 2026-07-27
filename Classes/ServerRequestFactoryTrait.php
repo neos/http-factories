@@ -47,8 +47,7 @@ trait ServerRequestFactoryTrait
         string $defaultUserAgent = 'Flow/' . FLOW_VERSION_BRANCH,
         string $scriptPath = 'index.php',
         string $defaultHttpVersion = '1.1'
-    )
-    {
+    ) {
         $this->uriFactory = $uriFactory;
         $this->defaultUserAgent = $defaultUserAgent;
         $this->scriptPath = $scriptPath;
